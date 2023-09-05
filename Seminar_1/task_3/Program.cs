@@ -10,4 +10,4 @@ if (result == true)
         if (number%2 == 0)
         Console.WriteLine("Число " + number + " делится на два без остатка");
         else Console.WriteLine("Число " + number + " НЕ делится на два без остатка");    }
-else Console.WriteLine("Введенные вами данные не являются числами, сравнение невозможно!!!");
+else Console.WriteLine("Введенные вами данные не являются числами, проверка на четность невозможна!!!");
