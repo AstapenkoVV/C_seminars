@@ -2,7 +2,7 @@
 // число и выдаёт, является ли число 
 // чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("Введите первое число: ");
+Console.WriteLine("Введите число: ");
 string num = (Console.ReadLine());
 bool result = int.TryParse(num, out int number);
 if (result == true)
