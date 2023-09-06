@@ -3,7 +3,6 @@
 // вторую цифру этого числа.
 Console.WriteLine("Введите 3х значное число: ");
 string num = (Console.ReadLine());
-// Console.WriteLine(num.Length);
 if (num.Length == 3)
 {   bool result = int.TryParse(num, out int number);
     if (result == true)
