@@ -8,8 +8,7 @@ if (num.Length == 3)
 {   bool result = int.TryParse(num, out int number);
     if (result == true)
         {
-            int n = number / 10;
-            n = n % 10;
+            int n = (number / 10) % 10;
             Console.WriteLine("Втарая цифра числа: " + n);
         }
     else Console.WriteLine("Введенные вами данные не являются числом!!!");
