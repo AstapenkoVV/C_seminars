@@ -1,15 +1,22 @@
 ﻿// Задача 10: Напишите программу, которая принимает 
 // на вход трёхзначное число и на выходе показывает 
 // вторую цифру этого числа.
-Console.WriteLine("Введите 3х значное число: ");
-string num = (Console.ReadLine());
-if (num.Length == 3)
-{   bool result = int.TryParse(num, out int number);
-    if (result == true)
-        {
-            int n = (number / 10) % 10;
-            Console.WriteLine("Втарая цифра числа: " + n);
-        }
-    else Console.WriteLine("Введенные вами данные не являются числом!!!");
+
+int WorkWithUser (string message)
+{
+    Console.Write(message);
+    int number = int.Parse(Console.ReadLine()!);
+    return number;
 }
-else Console.WriteLine("Введенные вами данные не являются числом или это не 3х значное число.");
+void FindNumber(int num)
+{
+    if (num > 99 && num <1000)
+    {
+        int n = (num / 10) % 10;
+        Console.WriteLine("Втарая цифра числа: " + n);
+    }
+    else Console.WriteLine("Это не 3х значное число.!!!");
+}
+
+int x = WorkWithUser("Введите 3х значное число: ");
+FindNumber(x);
